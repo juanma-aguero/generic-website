@@ -1,0 +1,58 @@
+<script type="text/javascript">
+    $('#frame').ready(function(){
+        
+    });
+    function setAuthorGallery(galleryId){
+        $('[id^=gallery]').hide();
+        $('#gallery'+galleryId).show();
+    }
+    function loadImage(galleryId,imageId){
+        $('#image-container-'+galleryId).empty();
+        $('#image-container-'+galleryId).html('<img src="images/residencial/image'+galleryId+'-'+imageId+'.jpg"/>');
+    }
+</script>
+
+<!-- Galeria 1 -->
+<div class="frame" id="gallery1">
+    <div class="gallery-title">
+        <span>Autor 01</span>
+        <ul>
+            <li onclick="setAuthorGallery(1);">01</li>
+            <li onclick="setAuthorGallery(2);">02</li>
+        </ul>
+    </div>
+    
+    <div class="image-container" id="image-container-1">
+        <img src="images/residencial/image1-1.jpg"/>
+    </div>
+    <div class="image-selector">
+        <ul>
+            <li><img src="images/residencial/thumbs/image1.jpg" onclick="loadImage(1,1)"/></li>
+            <li><img src="images/residencial/thumbs/image2.jpg" onclick="loadImage(1,2)"/></li>
+            <li><img src="images/residencial/thumbs/image3.jpg" onclick="loadImage(1,3)"/></li>
+        </ul>
+    </div>
+</div>
+
+
+<!-- Galeria 2 -->
+<div class="frame" id="gallery2" style="display: none;">
+    <div class="gallery-title">
+        <span>Autor 02</span>
+        <ul>
+            <li onclick="setAuthorGallery(1);">01</li>
+            <li onclick="setAuthorGallery(2);">02</li>
+        </ul>
+    </div>
+    
+    <div class="image-container" id="image-container-2">
+        <img src="images/residencial/image2-2.jpg"/>
+    </div>
+    <div class="image-selector">
+        <ul>
+            <li><img src="images/residencial/thumbs/image3.jpg" onclick="loadImage(2,3)"/></li>
+            <li><img src="images/residencial/thumbs/image2.jpg" onclick="loadImage(2,2)"/></li>
+            <li><img src="images/residencial/thumbs/image1.jpg" onclick="loadImage(2,1)"/></li>
+        </ul>
+    </div>
+</div>

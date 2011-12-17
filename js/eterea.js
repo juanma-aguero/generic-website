@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
         }
 
         $.history.init(function(url) {
-                load(url == "" ? "presentacion" : url);
+                load(url == "" ? "inicio" : url);
             });
 
         $('#ajax-links a').live('click', function(e) {

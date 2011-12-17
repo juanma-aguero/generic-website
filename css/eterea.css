@@ -1,7 +1,160 @@
 body{
-	background-color: black;
-	color: white;
-
+    background-image: url('/eterea/images/background.jpg');
+    background-size: cover;
+    background-color: beige;
+    color: #666;
+    font-family: Century Gothic;
 }
 
-#container { border: 1px #666 solid; width: 300px; height: 300px; padding:0.5em; }
+
+/**
+*   Page structure
+*/
+#header{
+    height: 130px;
+}
+
+#content{ 
+    background-color: white;
+    margin: auto;
+    /*    border: 1px #666 solid;*/
+    width: 1022px;
+    /*    min-height: 800px;*/
+    color: #666;
+}
+
+#footer{
+    display: none;
+}
+
+
+
+/*
+*   Modules - structure
+*/
+#header-content{
+    padding: 20px;
+    background-color: white;
+    width: 982px;
+    margin: auto;
+    /*    border: 1px #666 solid;*/
+    height: 130px;
+}
+
+#container{
+    padding: 20px;
+}
+
+.frame{
+    background-color: white;
+    min-height: 750px;
+}
+.frame-home{
+    background-image: url('../images/home-bg.png'); 
+    height: 500px !important;
+} 
+
+
+/*
+*
+*/
+#main-logo{
+    float: left;
+    width: 290px;
+}
+#main-menu{
+    float: left;
+    width: 650px;
+    border-top: 1px #a3195b solid;
+    border-bottom: 1px #a3195b solid;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 40px;
+}
+#main-menu li{
+    display: inline;
+    margin-left: 30px;
+}
+#main-menu li a{
+    font-weight: bold;
+    color: #666;
+    text-decoration: none;
+}
+#main-menu li a:hover{
+    color: #a3195b;
+}
+
+
+.gallery-title{
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.gallery-title span{
+    text-align: center;
+    color: white;
+    height: 30px;
+    display: block;
+    background-color: #a3195b;
+    width: 287px;
+    float: left;
+    margin-right: 30px;
+}
+.gallery-title ul{
+    height: 29px;
+    border-top: 1px #a3195b solid;
+    border-bottom: 1px #a3195b solid;
+}
+.gallery-title ul li{
+    display: inline;
+    margin-left: 10px;
+
+}
+.gallery-title ul li:hover{
+    cursor: pointer;
+    color: #a3195b;
+}
+
+.image-container{
+    float: left;
+    width: 655px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.image-selector{
+    float: left;
+    border-left: 1px #a3195b solid;
+    border-right: 1px #a3195b solid;
+    width: 180px;
+    min-height: 400px;
+    margin-left: 30px;
+    margin-top: 20px;
+    list-style: none;
+}
+.image-selector li{
+    margin-bottom: 5px;
+    list-style: none;
+}
+.image-selector li img{
+    width: 150px;
+    height: 100px;
+    margin-left: -25px;
+    cursor: pointer;
+}
+
+#mailto{
+    display: block;
+    float: right;
+    height: 28px;
+    width: 250px;
+    background-image: url('../images/mail.png');
+}
+
+#speach{
+    width: 380px;
+    margin-left: 380px;
+    margin-top: 30px;
+    font-size: 17px;
+    text-align: justify;
+}
