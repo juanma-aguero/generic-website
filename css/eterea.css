@@ -43,13 +43,13 @@ body{
     background-image: url('../images/container-bg.png');
     background-position: bottom;
     background-repeat: no-repeat;
-    display: table;
     margin: 20px 20px 20px 20px;
     width: 982px;
 }
 
 .frame{
     min-height: 525px;
+    display: table;
 }
 .frame-home{
     background-image: url('../images/home-bg.png'); 
