@@ -1,11 +1,12 @@
 body{
-    background-image: url('/eterea/images/background.jpg');
-    background-size: cover;
-    background-color: beige;
+    margin: 0px;
+    background-image: url('/eterea/images/ETEREA_HomeFondo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
     color: #666;
-    font-family: Century Gothic;
+    font-family: 'Century Gothic',futura,'URW Gothic L',Verdana,sans-serif;
+    
 }
-
 
 /**
 *   Page structure
@@ -17,9 +18,7 @@ body{
 #content{ 
     background-color: white;
     margin: auto;
-    /*    border: 1px #666 solid;*/
     width: 1022px;
-    /*    min-height: 800px;*/
     color: #666;
 }
 
@@ -37,20 +36,25 @@ body{
     background-color: white;
     width: 982px;
     margin: auto;
-    /*    border: 1px #666 solid;*/
     height: 130px;
 }
 
 #container{
-    padding: 20px;
+    background-image: url('../images/container-bg.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: table;
+    margin: 20px 20px 20px 20px;
+    width: 982px;
 }
 
 .frame{
-    background-color: white;
-    min-height: 750px;
+    min-height: 525px;
 }
 .frame-home{
     background-image: url('../images/home-bg.png'); 
+    display: table;
+    width: 982px;
     height: 500px !important;
 } 
 
@@ -76,31 +80,37 @@ body{
     margin-left: 30px;
 }
 #main-menu li a{
+    font-size: 14px;
     font-weight: bold;
-    color: #666;
+    color: #333333;
     text-decoration: none;
 }
 #main-menu li a:hover{
-    color: #a3195b;
+    color: #BE1622;
+}
+#main-menu li a.active {
+    color: #BE1622;
 }
 
 
 .gallery-title{
     height: 30px;
     line-height: 30px;
-    font-weight: bold;
 }
 .gallery-title span{
     text-align: center;
-    color: white;
+    color: #ffffff;
     height: 30px;
     display: block;
     background-color: #a3195b;
     width: 287px;
     float: left;
     margin-right: 30px;
+    font-size: 18px;
 }
 .gallery-title ul{
+    font-weight: bold;
+    font-size: 14px;
     height: 29px;
     border-top: 1px #a3195b solid;
     border-bottom: 1px #a3195b solid;
@@ -112,7 +122,7 @@ body{
 }
 .gallery-title ul li:hover{
     cursor: pointer;
-    color: #a3195b;
+    color: #BE1622;
 }
 
 .image-container{
@@ -127,10 +137,11 @@ body{
     border-left: 1px #a3195b solid;
     border-right: 1px #a3195b solid;
     width: 180px;
-    min-height: 400px;
+    height: 450px;
     margin-left: 30px;
     margin-top: 20px;
     list-style: none;
+    overflow: hidden;
 }
 .image-selector li{
     margin-bottom: 5px;
@@ -140,6 +151,34 @@ body{
     width: 150px;
     height: 100px;
     margin-left: -25px;
+    cursor: pointer;
+}
+.frame button{
+    margin-top: 100px;
+    float: left;
+}
+.image-slider{
+    top: 0px;
+    position: relative;
+    display: table;
+}
+.slide-area{
+    margin-top: 230px;
+    float: right;
+    width: 45px;
+    height: 45px;
+    background-image: url('../images/slide-bg.png');
+}
+.slide-area a{
+    line-height: 20px;
+    font-size: 20px;
+    display: block;
+    color: #ffffff;
+    margin-left: 5px;
+    width: 20px;
+}
+.slide-area a:hover{
+    font-weight: bold;
     cursor: pointer;
 }
 
@@ -152,9 +191,10 @@ body{
 }
 
 #speach{
+    color: #333333;
     width: 380px;
     margin-left: 380px;
     margin-top: 30px;
-    font-size: 17px;
-    text-align: justify;
+    font-size: 14px;
+    line-height: 20px;
 }
