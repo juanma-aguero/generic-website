@@ -9,13 +9,6 @@ $galerias = array(
 ?>
 
 <script type="text/javascript">
-    $('#frame').ready(function(){
-        
-    });
-    function setAuthorGallery(galleryId){
-        $('[id^=gallery]').hide();
-        $('#'+galleryId).show();
-    }
     function loadImage(galleryId, path, imageNumber){
         $('#image-container-'+galleryId).empty();
         var imgSrc='<?php echo $GalleryPath ?>' + path + '/' + imageNumber+'.jpg';

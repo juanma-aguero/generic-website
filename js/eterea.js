@@ -16,11 +16,10 @@ jQuery(document).ready(function($) {
     });
     
     $('#main-menu li a').click(function(){
-
-        this.addClass('active');
-        
+        $('#main-menu li a').removeClass('active');
+        $(this).addClass('active');
     });
-    
+
 });
 
 
@@ -38,12 +37,15 @@ function slideThumbsDown(galleryId){
     var heightNow = ($('#'+galleryId).css('height'));
     heightNow = heightNow.substr(0, (heightNow.length-2));
     
-    console.log('heightNow:'+heightNow);
-    
     if(topNow < 0){
         $('#'+galleryId).stop().animate({
             top: '+=100'
         }, 300);
         
     }
+}
+
+function setAuthorGallery(galleryId){
+    $('[id^=gallery]').hide();
+    $('#'+galleryId).show();
 }

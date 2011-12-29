@@ -50,6 +50,7 @@ body{
 .frame{
     min-height: 525px;
     display: table;
+    width: 982px;
 }
 .frame-home{
     background-image: url('../images/home-bg.png'); 
@@ -140,6 +141,7 @@ body{
     height: 450px;
     margin-left: 30px;
     margin-top: 20px;
+    margin-bottom: 15px;
     list-style: none;
     overflow: hidden;
 }
@@ -149,10 +151,11 @@ body{
 }
 .image-selector li img{
     width: 150px;
-    height: 100px;
+    height: auto;
     margin-left: -25px;
     cursor: pointer;
 }
+
 .frame button{
     margin-top: 100px;
     float: left;
